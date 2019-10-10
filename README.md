@@ -9,19 +9,19 @@ In der Presse am Sonntag, sowie in zahlreichen weiteren Tagszeitungen, findet ma
 
 Grundlegende Ordnerstruktur, bei Bedarf erweitern
 
-git.battleship
-├───Android
-│   ├───code
-│   ├───design
-│   └───todo
-├───iOS
-│   ├───code
-│   ├───design
-│   └───todo
-└───sprint_states
-    ├───sprint#1
-    ├───sprint#2
-    └───sprint#3
+git.battleship  
+├───Android  
+│   ├───code  
+│   ├───design  
+│   └───todo  
+├───iOS  
+│   ├───code  
+│   ├───design  
+│   └───todo  
+└───sprint_states  
+    ├───sprint#1  
+    ├───sprint#2  
+    └───sprint#3  
 
 #### Android
 
@@ -45,5 +45,5 @@ Platz für Prototypen und Code, der sich noch in Bearbeitung befindet / zum Expe
 
 #### sprints_states
 
-Zwischenstände für den Product Owner, alle 2 Wochen (8 Arbeitsstunden) zum Updaten
+Zwischenstände für den Product Owner, alle 2 Wochen (8 Arbeitsstunden) zum Updaten  
 Jeweils lauffähige Prototypen und relevante Skizzen zum Vorzeigen einfügen, bleibt nach Besprechung mit Product Owner unbearbeitet
