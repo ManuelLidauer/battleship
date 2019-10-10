@@ -1,0 +1,10 @@
+Wikipedia-Original
+Die Zahl am Ende jeder Zeile oder Spalte zeigt an, wie viele Felder durch Schiffe resp. Schiffselemente besetzt sind.
+Schiffe dürfen sich nicht berühren, weder horizontal oder vertikal, noch diagonal. Das heißt, dass jedes Schiff vollständig von Wasser (oder Rand) umgeben sein muss.[1]
+Schiffe dürfen den Rand berühren, sowohl der Länge nach wie auch stirnseitig
+
+
+Own:
+* Die Zahl am Ende einer Zeile / Spalte gibt an, wieviele Schiffsblöcke sich dort befinden
+* Schiffsblöcke von verschiedenen Schiffen müssen in alle Richtungen durch ein Wasserfeld abgegrenzt sein
+* Schiffe dürfen den Rand berühren, längs- als auch stirnseitig
