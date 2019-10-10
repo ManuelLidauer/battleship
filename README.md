@@ -19,9 +19,9 @@ git.battleship
 │&nbsp;&nbsp;&nbsp;├───design  
 │&nbsp;&nbsp;&nbsp;└───todo  
 └───sprint_states  
-&nbsp;&nbsp;&nbsp;&nbsp;├───sprint#1  
-&nbsp;&nbsp;&nbsp;&nbsp;├───sprint#2  
-&nbsp;&nbsp;&nbsp;&nbsp;└───sprint#3  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├───sprint#1  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├───sprint#2  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└───sprint#3  
 
 #### Android
 
