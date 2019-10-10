@@ -11,17 +11,17 @@ Grundlegende Ordnerstruktur, bei Bedarf erweitern
 
 git.battleship  
 ├───Android  
-│   ├───code  
-│   ├───design  
-│   └───todo  
+│&nbsp;&nbsp;&nbsp;├───code  
+│&nbsp;&nbsp;&nbsp;├───design  
+│&nbsp;&nbsp;&nbsp;└───todo  
 ├───iOS  
-│   ├───code  
-│   ├───design  
-│   └───todo  
+│&nbsp;&nbsp;&nbsp;├───code  
+│&nbsp;&nbsp;&nbsp;├───design  
+│&nbsp;&nbsp;&nbsp;└───todo  
 └───sprint_states  
-    ├───sprint#1  
-    ├───sprint#2  
-    └───sprint#3  
+&nbsp;&nbsp;&nbsp;&nbsp;├───sprint#1  
+&nbsp;&nbsp;&nbsp;&nbsp;├───sprint#2  
+&nbsp;&nbsp;&nbsp;&nbsp;└───sprint#3  
 
 #### Android
 
