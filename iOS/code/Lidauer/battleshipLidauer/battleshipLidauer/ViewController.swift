@@ -10,9 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var levelname1: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        /*
+        //Set levelnames
+        self.levelname1.text = "Mittelmeer";
+        */
+        
+        
+        
+        
+        
+        
+        
     }
 
 
