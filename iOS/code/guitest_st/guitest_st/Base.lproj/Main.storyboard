@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -11,60 +11,155 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="guitest_st" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="DesignableView" customModule="guitest_st" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Int-9v-1IW">
-                                <rect key="frame" x="16" y="303" width="343" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Levels">
-                                    <color key="titleColor" systemColor="systemGroupedBackgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFe-aY-UBe">
-                                <rect key="frame" x="16" y="467" width="343" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFe-aY-UBe">
+                                <rect key="frame" x="16" y="1055" width="992" height="139"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iFe-aY-UBe" secondAttribute="height" multiplier="343:48" id="UKf-eF-B1u"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Rules">
                                     <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ndz-Kx-ftD" kind="presentation" modalPresentationStyle="fullScreen" id="aaG-Sp-hFx"/>
+                                    <segue destination="ndz-Kx-ftD" kind="presentation" modalPresentationStyle="overCurrentContext" id="aaG-Sp-hFx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Int-9v-1IW">
+                                <rect key="frame" x="16" y="795" width="992" height="153"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Int-9v-1IW" secondAttribute="height" multiplier="343:53" id="923-tf-x18"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Levels">
+                                    <color key="titleColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Z7X-Ha-lPo" kind="presentation" modalPresentationStyle="fullScreen" id="rdb-3M-6X6"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.48155692089458896" green="0.59418157506213343" blue="0.93205553756476678" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Int-9v-1IW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4m6-ju-GXn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iFe-aY-UBe" secondAttribute="bottom" constant="152" id="5Wa-ST-MrG"/>
+                            <constraint firstItem="Int-9v-1IW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7oE-SR-2Em"/>
+                            <constraint firstItem="iFe-aY-UBe" firstAttribute="top" secondItem="Int-9v-1IW" secondAttribute="bottom" constant="107" id="GMi-qM-nRI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iFe-aY-UBe" secondAttribute="trailing" constant="16" id="Lef-Sr-qEd"/>
+                            <constraint firstItem="iFe-aY-UBe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="PPY-uP-Hqj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Int-9v-1IW" secondAttribute="trailing" constant="16" id="hFa-CS-VtG"/>
+                            <constraint firstItem="iFe-aY-UBe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xOL-2g-xzo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                <color key="value" red="0.27450980392156865" green="0.62352941176470589" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                <color key="value" red="0.12941176470588234" green="0.27058823529411763" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" id="hjD-3N-I8H"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.40000000000001" y="115.59220389805098"/>
+            <point key="canvasLocation" x="-650" y="59"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xCC-wY-yIv">
+            <objects>
+                <viewController id="Z7X-Ha-lPo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IVS-wS-Add">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LEVELS MANUEL" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpa-mK-eww">
+                                <rect key="frame" x="88" y="147" width="199" height="330"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSf-YC-92S">
+                                <rect key="frame" x="196" y="81" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="5pZ-iE-ssh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="nJo-mK-hVo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UE2-z1-inT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.8" y="64.31784107946028"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gXc-C4-dqr">
             <objects>
                 <viewController id="ndz-Kx-ftD" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NP9-fr-TQD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="NP9-fr-TQD" customClass="DesignableView" customModule="guitest_st" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="by9-Uz-9av">
-                                <rect key="frame" x="72" y="80" width="230" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="249" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVp-CZ-Jyo">
+                                <rect key="frame" x="67" y="115" width="889" height="1169"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Wikipedia-Original
+Die Zahl am Ende jeder Zeile oder Spalte zeigt an, wie viele Felder durch Schiffe resp. Schiffselemente besetzt sind.
+Schiffe d¸rfen sich nicht ber¸hren, weder horizontal oder vertikal, noch diagonal. Das heiﬂt, dass jedes Schiff vollst‰ndig von Wasser (oder Rand) umgeben sein muss.[1]
+Schiffe d¸rfen den Rand ber¸hren, sowohl der L‰nge nach wie auch stirnseitig
+
+
+Own:
+* Die Zahl am Ende einer Zeile / Spalte gibt an, wieviele Schiffsblˆcke sich dort befinden
+* Schiffsblˆcke von verschiedenen Schiffen m¸ssen in alle Richtungen durch ein Wasserfeld abgegrenzt sein
+* Schiffe d¸rfen den Rand ber¸hren, l‰ngs- als auch stirnseitig</string>
+                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBI-Jn-Dk4">
+                                <rect key="frame" x="1" y="0.0" width="1022" height="85"/>
+                                <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="53"/>
+                                <state key="normal" title="⌄">
+                                    <color key="titleColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" customClass="InvertedVerticalCover" customModule="guitest_st" customModuleProvider="target" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="cel-xy-ybH"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.27058823529411763" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="PVp-CZ-Jyo" firstAttribute="top" secondItem="PBI-Jn-Dk4" secondAttribute="bottom" constant="30" id="0fy-cK-93m"/>
+                            <constraint firstItem="PBI-Jn-Dk4" firstAttribute="leading" secondItem="NP9-fr-TQD" secondAttribute="leading" constant="1" id="5xz-bA-hT4"/>
+                            <constraint firstItem="5oA-J2-h7h" firstAttribute="bottom" secondItem="PVp-CZ-Jyo" secondAttribute="bottom" constant="62" id="Z43-0b-M0v"/>
+                            <constraint firstItem="PBI-Jn-Dk4" firstAttribute="top" secondItem="5oA-J2-h7h" secondAttribute="top" id="a8f-dU-8Q7"/>
+                            <constraint firstItem="PVp-CZ-Jyo" firstAttribute="leading" secondItem="5oA-J2-h7h" secondAttribute="leading" constant="67" id="ng0-BY-fkB"/>
+                            <constraint firstItem="PBI-Jn-Dk4" firstAttribute="centerX" secondItem="NP9-fr-TQD" secondAttribute="centerX" id="nuh-We-HNP"/>
+                            <constraint firstItem="5oA-J2-h7h" firstAttribute="trailing" secondItem="PVp-CZ-Jyo" secondAttribute="trailing" constant="68" id="tza-Ls-dBH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5oA-J2-h7h"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                <color key="value" red="0.12941176469999999" green="0.27058823529999998" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                <color key="value" red="0.20999999999999999" green="0.21749999999999994" blue="0.29999999999999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="3eN-r1-Pmg" appends="YES" id="2uR-Ik-tUu"/>
                         </connections>
@@ -74,20 +169,15 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I7B-zj-npG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="down" id="3eN-r1-Pmg">
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="zKG-aV-k6P"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" customClass="InvertedVerticalCover" customModule="guitest_st" customModuleProvider="target" modalPresentationStyle="fullScreen" id="3eN-MV-eNg"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-784.79999999999995" y="564.46776611694156"/>
-        </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="tfN-Oa-Cjx">
-            <objects>
-                <viewControllerPlaceholder id="8hq-Vy-NrA" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="agZ-G0-iuL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="786" y="326"/>
+            <point key="canvasLocation" x="-650.39999999999998" y="830.73463268365822"/>
         </scene>
     </scenes>
-    <color key="tintColor" systemColor="systemPurpleColor" red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <inferredMetricsTieBreakers>
+        <segue reference="cel-xy-ybH"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
