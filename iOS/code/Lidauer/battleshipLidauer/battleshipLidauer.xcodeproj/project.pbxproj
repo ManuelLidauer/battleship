@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46AAA195237451FA008704FF /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AAA194237451FA008704FF /* GradientView.swift */; };
+		46AAA19723745855008704FF /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AAA19623745855008704FF /* ShadowView.swift */; };
 		46CF2E2B2358A643009E53FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CF2E2A2358A643009E53FA /* AppDelegate.swift */; };
 		46CF2E2D2358A643009E53FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CF2E2C2358A643009E53FA /* SceneDelegate.swift */; };
 		46CF2E2F2358A643009E53FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CF2E2E2358A643009E53FA /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46AAA194237451FA008704FF /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		46AAA19623745855008704FF /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		46CF2E272358A643009E53FA /* battleshipLidauer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = battleshipLidauer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46CF2E2A2358A643009E53FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46CF2E2C2358A643009E53FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				46CF2E332358A645009E53FA /* Assets.xcassets */,
 				46CF2E352358A645009E53FA /* LaunchScreen.storyboard */,
 				46CF2E382358A645009E53FA /* Info.plist */,
+				46AAA194237451FA008704FF /* GradientView.swift */,
+				46AAA19623745855008704FF /* ShadowView.swift */,
 			);
 			path = battleshipLidauer;
 			sourceTree = "<group>";
@@ -140,7 +146,9 @@
 			files = (
 				46CF2E2F2358A643009E53FA /* ViewController.swift in Sources */,
 				46CF2E2B2358A643009E53FA /* AppDelegate.swift in Sources */,
+				46AAA195237451FA008704FF /* GradientView.swift in Sources */,
 				46CF2E2D2358A643009E53FA /* SceneDelegate.swift in Sources */,
+				46AAA19723745855008704FF /* ShadowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
