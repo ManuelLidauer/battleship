@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		460A6D852386EA9F0090D0BF /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460A6D842386EA9F0090D0BF /* ShadowView.swift */; };
+		460A6D872386EAAA0090D0BF /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460A6D862386EAAA0090D0BF /* GradientView.swift */; };
 		46EA37392374542B00087F18 /* ColorGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA37382374542B00087F18 /* ColorGradient.swift */; };
 		46EA373B23745A9C00087F18 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA373A23745A9C00087F18 /* DesignableView.swift */; };
 		46EA3743237465EF00087F18 /* InvertedVerticalCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA3742237465EF00087F18 /* InvertedVerticalCover.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		460A6D842386EA9F0090D0BF /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		460A6D862386EAAA0090D0BF /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		46EA37382374542B00087F18 /* ColorGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGradient.swift; sourceTree = "<group>"; };
 		46EA373A23745A9C00087F18 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		46EA3742237465EF00087F18 /* InvertedVerticalCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertedVerticalCover.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				46F41C6723589421003CF8B4 /* Info.plist */,
 				46EA373A23745A9C00087F18 /* DesignableView.swift */,
 				46EA3742237465EF00087F18 /* InvertedVerticalCover.swift */,
+				460A6D842386EA9F0090D0BF /* ShadowView.swift */,
+				460A6D862386EAAA0090D0BF /* GradientView.swift */,
 			);
 			path = guitest_st;
 			sourceTree = "<group>";
@@ -153,6 +159,8 @@
 				46F41C5C23589420003CF8B4 /* SceneDelegate.swift in Sources */,
 				46EA373B23745A9C00087F18 /* DesignableView.swift in Sources */,
 				46EA37392374542B00087F18 /* ColorGradient.swift in Sources */,
+				460A6D872386EAAA0090D0BF /* GradientView.swift in Sources */,
+				460A6D852386EA9F0090D0BF /* ShadowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

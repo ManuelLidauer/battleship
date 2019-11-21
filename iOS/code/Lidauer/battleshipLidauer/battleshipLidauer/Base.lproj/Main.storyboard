@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,98 +12,12 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="battleshipLidauer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="GradientView" customModule="battleshipLidauer" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zp0-Bl-Vtq" userLabel="LevelView8" customClass="ShadowView" customModule="battleshipLidauer" customModuleProvider="target">
-                                <rect key="frame" x="152" y="654" width="110" height="150"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I6g-Vn-oub" userLabel="Line5">
-                                        <rect key="frame" x="0.0" y="72" width="110" height="1"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
-                                    </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="play.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hcJ-fA-Hjq">
-                                        <rect key="frame" x="30" y="8" width="51" height="65"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Südpolar Meer" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BHv-jQ-xJj">
-                                        <rect key="frame" x="15" y="81" width="81" height="39"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.12941176469999999" green="0.27058823529999998" blue="0.59607843140000005" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="BHv-jQ-xJj" firstAttribute="centerY" secondItem="Zp0-Bl-Vtq" secondAttribute="centerY" id="CFj-z6-GLN"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                        <real key="value" value="0.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                        <size key="value" width="5" height="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cNt-31-2Pd" userLabel="LevelView7" customClass="ShadowView" customModule="battleshipLidauer" customModuleProvider="target">
-                                <rect key="frame" x="20" y="654" width="110" height="150"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3NQ-Js-woY" userLabel="Line5">
-                                        <rect key="frame" x="0.0" y="72" width="110" height="1"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
-                                    </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="play.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="D7c-Vc-eBH">
-                                        <rect key="frame" x="30" y="8" width="51" height="65"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Nordpolar Meer" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiQ-pd-saI">
-                                        <rect key="frame" x="12" y="81" width="86" height="39"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.12941176469999999" green="0.27058823529999998" blue="0.59607843140000005" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="kiQ-pd-saI" firstAttribute="centerY" secondItem="cNt-31-2Pd" secondAttribute="centerY" id="YYT-Oc-q51"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                        <real key="value" value="0.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                        <size key="value" width="5" height="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n2J-eP-szf" userLabel="LevelView6" customClass="ShadowView" customModule="battleshipLidauer" customModuleProvider="target">
-                                <rect key="frame" x="284" y="427" width="110" height="150"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" id="n2J-eP-szf" userLabel="LevelView6" customClass="ShadowView" customModule="battleshipLidauer" customModuleProvider="target">
+                                <rect key="frame" x="249" y="304" width="110" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z54-gV-0i4" userLabel="Line5">
                                         <rect key="frame" x="0.0" y="72" width="110" height="1"/>
@@ -115,8 +29,9 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Indik" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6RV-5X-EKb">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Indik" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6RV-5X-EKb">
                                         <rect key="frame" x="38" y="81" width="35" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -124,7 +39,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.12941176469999999" green="0.27058823529999998" blue="0.59607843140000005" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="6RV-5X-EKb" firstAttribute="centerY" secondItem="n2J-eP-szf" secondAttribute="centerY" id="7ge-gO-FeK"/>
+                                    <constraint firstAttribute="height" constant="140" id="UIs-16-UW1"/>
+                                    <constraint firstAttribute="width" constant="110" id="wSi-8m-EFs"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
@@ -145,8 +61,9 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PXK-Wt-X98" userLabel="LevelView4" customClass="ShadowView" customModule="battleshipLidauer" customModuleProvider="target">
-                                <rect key="frame" x="20" y="427" width="110" height="150"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" id="PXK-Wt-X98" userLabel="LevelView4" customClass="ShadowView" customModule="battleshipLidauer" customModuleProvider="target">
+                                <rect key="frame" x="16" y="304" width="110" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mbw-qj-vyU" userLabel="Line4">
                                         <rect key="frame" x="0.0" y="72" width="110" height="1"/>
@@ -158,8 +75,9 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Nordpazifik" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uH-Ex-zFb">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nordpazifik" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uH-Ex-zFb">
                                         <rect key="frame" x="13" y="81" width="84" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -167,7 +85,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.12941176469999999" green="0.27058823529999998" blue="0.59607843140000005" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="6uH-Ex-zFb" firstAttribute="centerY" secondItem="PXK-Wt-X98" secondAttribute="centerY" id="BPg-Im-sSG"/>
+                                    <constraint firstAttribute="height" constant="140" id="dd2-fY-C4y"/>
+                                    <constraint firstAttribute="width" constant="110" id="uwv-0Q-jqJ"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
@@ -188,62 +107,23 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jCi-7A-wNe" userLabel="LeveView2" customClass="ShadowView" customModule="battleshipLidauer" customModuleProvider="target">
-                                <rect key="frame" x="152" y="194" width="110" height="150"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lwS-71-jdP" userLabel="Line2">
-                                        <rect key="frame" x="0.0" y="72" width="110" height="1"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
-                                    </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="play.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZIc-uj-nMG">
-                                        <rect key="frame" x="30" y="8" width="51" height="65"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nordsee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfR-Tm-zv5">
-                                        <rect key="frame" x="24" y="81" width="62" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.12941176469999999" green="0.27058823529999998" blue="0.59607843140000005" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                        <real key="value" value="0.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                        <size key="value" width="5" height="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ew9-Wj-4DE" userLabel="LevelView1" customClass="ShadowView" customModule="battleshipLidauer" customModuleProvider="target">
-                                <rect key="frame" x="20" y="194" width="110" height="150"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" id="ew9-Wj-4DE" userLabel="LevelView1" customClass="ShadowView" customModule="battleshipLidauer" customModuleProvider="target">
+                                <rect key="frame" x="16" y="133" width="110" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MEH-jY-n0u" userLabel="Line1">
                                         <rect key="frame" x="0.0" y="72" width="110" height="1"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" image="play.circle.fill" catalog="system" id="KNT-J1-K8P">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="play.circle.fill" catalog="system" id="KNT-J1-K8P">
                                         <rect key="frame" x="30" y="8" width="51" height="65"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Mittelmeer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qc9-2Y-AG9">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mittelmeer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qc9-2Y-AG9">
                                         <rect key="frame" x="16" y="81" width="78" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -251,7 +131,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.12941176469999999" green="0.27058823529999998" blue="0.59607843140000005" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="qc9-2Y-AG9" firstAttribute="centerY" secondItem="ew9-Wj-4DE" secondAttribute="centerY" id="yhj-eS-VWW"/>
+                                    <constraint firstAttribute="width" constant="110" id="0tb-cw-jGX"/>
+                                    <constraint firstAttribute="height" constant="140" id="esM-Km-Bj2"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
@@ -273,11 +154,11 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" id="eO4-SV-f5e" customClass="ShadowView" customModule="battleshipLidauer" customModuleProvider="target">
-                                <rect key="frame" x="-1" y="145" width="414" height="28"/>
+                                <rect key="frame" x="-1" y="108" width="375" height="21"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="easy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZa-gz-VYw">
-                                        <rect key="frame" x="192" y="5.6666666666666572" width="30" height="17"/>
+                                        <rect key="frame" x="172.5" y="2" width="30" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -304,11 +185,11 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" id="Vhv-7M-Ncv" customClass="ShadowView" customModule="battleshipLidauer" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="374" width="414" height="28"/>
+                                <rect key="frame" x="0.0" y="278" width="375" height="21"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="medium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctf-lg-Nay">
-                                        <rect key="frame" x="181" y="6" width="146" height="17"/>
+                                        <rect key="frame" x="161.5" y="2" width="52" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -332,11 +213,11 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" id="z7N-B2-vdv" customClass="ShadowView" customModule="battleshipLidauer" customModuleProvider="target">
-                                <rect key="frame" x="-1" y="602" width="414" height="28"/>
+                                <rect key="frame" x="-1" y="448" width="375" height="21"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOK-aY-aes">
-                                        <rect key="frame" x="192" y="5.6666666666666288" width="30" height="17"/>
+                                        <rect key="frame" x="172.5" y="2" width="30" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -359,8 +240,9 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rvk-2h-Bj8" userLabel="LevelView3" customClass="ShadowView" customModule="battleshipLidauer" customModuleProvider="target">
-                                <rect key="frame" x="284" y="194" width="110" height="150"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" id="rvk-2h-Bj8" userLabel="LevelView3" customClass="ShadowView" customModule="battleshipLidauer" customModuleProvider="target">
+                                <rect key="frame" x="249" y="133" width="110" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zDb-MS-Yee" userLabel="Line3">
                                         <rect key="frame" x="0.0" y="72" width="110" height="1"/>
@@ -372,8 +254,9 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ostsee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAv-8J-nS0">
-                                        <rect key="frame" x="30" y="81" width="52" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ostsee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lAv-8J-nS0">
+                                        <rect key="frame" x="29" y="81" width="52" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -381,7 +264,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.12941176469999999" green="0.27058823529999998" blue="0.59607843140000005" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="lAv-8J-nS0" firstAttribute="centerY" secondItem="rvk-2h-Bj8" secondAttribute="centerY" id="BxU-0k-NZL"/>
+                                    <constraint firstAttribute="width" constant="110" id="dfT-TO-5i7"/>
+                                    <constraint firstAttribute="height" constant="140" id="oyN-Z4-LxH"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
@@ -402,33 +286,41 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" id="aPx-4G-BiS">
-                                <rect key="frame" x="0.0" y="53" width="414" height="77"/>
+                            <view contentMode="scaleToFill" id="aPx-4G-BiS" userLabel="Menu Bar">
+                                <rect key="frame" x="0.0" y="39" width="375" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="arrow.left.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="HMG-CT-I2f">
-                                        <rect key="frame" x="22" y="16" width="46" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Levels" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxB-KL-fli">
-                                        <rect key="frame" x="146" y="6" width="216" height="110"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Levels" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxB-KL-fli">
+                                        <rect key="frame" x="126" y="-1" width="123" height="54"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="UxB-KL-fli" secondAttribute="height" multiplier="54:29" id="KXz-Ad-6JO"/>
+                                            <constraint firstAttribute="width" constant="123" id="br9-4a-WH9"/>
+                                            <constraint firstAttribute="height" constant="54" id="scC-mX-uE5"/>
                                         </constraints>
                                         <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" image="arrow.left.circle" catalog="system" id="HMG-CT-I2f">
+                                        <rect key="frame" x="22" y="5.5" width="51" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48.5" id="cos-Pp-93O"/>
+                                            <constraint firstAttribute="width" constant="51" id="uTa-BI-ZMq"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="UxB-KL-fli" firstAttribute="centerX" secondItem="aPx-4G-BiS" secondAttribute="centerX" id="1I2-bz-cKd"/>
-                                    <constraint firstItem="UxB-KL-fli" firstAttribute="centerY" secondItem="aPx-4G-BiS" secondAttribute="centerY" id="ImT-ht-P1R"/>
+                                    <constraint firstItem="UxB-KL-fli" firstAttribute="centerY" secondItem="HMG-CT-I2f" secondAttribute="centerY" id="3Je-vg-B1Y"/>
+                                    <constraint firstItem="UxB-KL-fli" firstAttribute="centerX" secondItem="aPx-4G-BiS" secondAttribute="centerX" id="NuE-2M-p7E"/>
+                                    <constraint firstItem="UxB-KL-fli" firstAttribute="top" secondItem="aPx-4G-BiS" secondAttribute="top" constant="-4" id="Wyq-Hx-rwX"/>
                                 </constraints>
                             </view>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ma8-ve-GPy" userLabel="LevelView5" customClass="ShadowView" customModule="battleshipLidauer" customModuleProvider="target">
-                                <rect key="frame" x="152" y="427" width="110" height="150"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" id="ma8-ve-GPy" userLabel="LevelView5" customClass="ShadowView" customModule="battleshipLidauer" customModuleProvider="target">
+                                <rect key="frame" x="133" y="304" width="110" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AZE-HV-ZGW" userLabel="Line5">
                                         <rect key="frame" x="0.0" y="72" width="110" height="1"/>
@@ -440,8 +332,9 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Südpazifik" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFh-3k-8WP">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Südpazifik" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFh-3k-8WP">
                                         <rect key="frame" x="17" y="81" width="76" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -449,7 +342,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.12941176469999999" green="0.27058823529999998" blue="0.59607843140000005" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="KFh-3k-8WP" firstAttribute="centerY" secondItem="ma8-ve-GPy" secondAttribute="centerY" id="f2z-CT-T3w"/>
+                                    <constraint firstAttribute="width" constant="110" id="NJS-OB-TPW"/>
+                                    <constraint firstAttribute="height" constant="140" id="qXk-kD-tQa"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
@@ -470,8 +364,55 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kwY-qd-6Si" userLabel="LevelView9" customClass="ShadowView" customModule="battleshipLidauer" customModuleProvider="target">
-                                <rect key="frame" x="284" y="654" width="110" height="150"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" id="cNt-31-2Pd" userLabel="LevelView7" customClass="ShadowView" customModule="battleshipLidauer" customModuleProvider="target">
+                                <rect key="frame" x="14" y="474" width="110" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3NQ-Js-woY" userLabel="Line5">
+                                        <rect key="frame" x="0.0" y="72" width="110" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="play.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="D7c-Vc-eBH">
+                                        <rect key="frame" x="30" y="8" width="51" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nordpolar Meer" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiQ-pd-saI">
+                                        <rect key="frame" x="12" y="81" width="86" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12941176469999999" green="0.27058823529999998" blue="0.59607843140000005" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="EiD-oA-hyu"/>
+                                    <constraint firstAttribute="width" constant="110" id="uRk-em-F8Q"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="5" height="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" id="kwY-qd-6Si" userLabel="LevelView9" customClass="ShadowView" customModule="battleshipLidauer" customModuleProvider="target">
+                                <rect key="frame" x="249" y="474" width="110" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PRQ-3y-7Wp" userLabel="Line5">
                                         <rect key="frame" x="0.0" y="72" width="110" height="1"/>
@@ -483,8 +424,9 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="KaspischesMeer" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvW-WA-3gz">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KaspischesMeer" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvW-WA-3gz">
                                         <rect key="frame" x="8" y="81" width="94" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -492,7 +434,100 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.12941176469999999" green="0.27058823529999998" blue="0.59607843140000005" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="jvW-WA-3gz" firstAttribute="centerY" secondItem="kwY-qd-6Si" secondAttribute="centerY" id="O2t-Ca-Iwt"/>
+                                    <constraint firstAttribute="width" constant="110" id="25E-sa-ADV"/>
+                                    <constraint firstAttribute="height" constant="140" id="C9B-Le-XP3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="5" height="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" id="jCi-7A-wNe" userLabel="LeveView2" customClass="ShadowView" customModule="battleshipLidauer" customModuleProvider="target">
+                                <rect key="frame" x="133" y="133" width="110" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lwS-71-jdP" userLabel="Line2">
+                                        <rect key="frame" x="0.0" y="72" width="110" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="play.circle.fill" catalog="system" id="ZIc-uj-nMG">
+                                        <rect key="frame" x="30" y="8" width="51" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nordsee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfR-Tm-zv5">
+                                        <rect key="frame" x="23" y="81" width="64" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12941176469999999" green="0.27058823529999998" blue="0.59607843140000005" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="4z0-Ss-W9t"/>
+                                    <constraint firstAttribute="height" constant="140" id="vZy-Uw-Jha"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="5" height="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" id="Zp0-Bl-Vtq" userLabel="LevelView8" customClass="ShadowView" customModule="battleshipLidauer" customModuleProvider="target">
+                                <rect key="frame" x="133" y="474" width="110" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I6g-Vn-oub" userLabel="Line5">
+                                        <rect key="frame" x="0.0" y="72" width="110" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="play.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hcJ-fA-Hjq">
+                                        <rect key="frame" x="30" y="8" width="51" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Südpolar Meer" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BHv-jQ-xJj">
+                                        <rect key="frame" x="15" y="76" width="81" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12941176469999999" green="0.27058823529999998" blue="0.59607843140000005" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="03a-5j-RVP"/>
+                                    <constraint firstAttribute="height" constant="140" id="3Sg-Su-ema"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
@@ -516,21 +551,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Zp0-Bl-Vtq" firstAttribute="centerX" secondItem="jCi-7A-wNe" secondAttribute="centerX" id="64v-YA-QzY"/>
-                            <constraint firstItem="kwY-qd-6Si" firstAttribute="centerY" secondItem="cNt-31-2Pd" secondAttribute="centerY" id="6B6-kC-GQc"/>
-                            <constraint firstItem="kwY-qd-6Si" firstAttribute="centerX" secondItem="rvk-2h-Bj8" secondAttribute="centerX" id="7Wk-gG-So5"/>
-                            <constraint firstItem="ma8-ve-GPy" firstAttribute="centerX" secondItem="jCi-7A-wNe" secondAttribute="centerX" id="FYY-4A-x3r"/>
-                            <constraint firstItem="cNt-31-2Pd" firstAttribute="centerX" secondItem="ew9-Wj-4DE" secondAttribute="centerX" id="HnD-BX-AF7"/>
-                            <constraint firstItem="Zp0-Bl-Vtq" firstAttribute="centerY" secondItem="cNt-31-2Pd" secondAttribute="centerY" id="PcL-db-Nyw"/>
-                            <constraint firstItem="jCi-7A-wNe" firstAttribute="centerY" secondItem="ew9-Wj-4DE" secondAttribute="centerY" id="Yux-V0-hsP"/>
-                            <constraint firstItem="PXK-Wt-X98" firstAttribute="centerX" secondItem="ew9-Wj-4DE" secondAttribute="centerX" id="aKs-kn-hPE"/>
-                            <constraint firstItem="ma8-ve-GPy" firstAttribute="centerY" secondItem="PXK-Wt-X98" secondAttribute="centerY" id="crc-BW-FBC"/>
-                            <constraint firstItem="n2J-eP-szf" firstAttribute="centerX" secondItem="rvk-2h-Bj8" secondAttribute="centerX" id="dIK-lP-87z"/>
-                            <constraint firstItem="jCi-7A-wNe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fpi-6D-sPs"/>
-                            <constraint firstItem="rvk-2h-Bj8" firstAttribute="centerY" secondItem="ew9-Wj-4DE" secondAttribute="centerY" id="kd5-fe-thF"/>
-                            <constraint firstItem="n2J-eP-szf" firstAttribute="centerY" secondItem="PXK-Wt-X98" secondAttribute="centerY" id="qVT-bT-yrP"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
@@ -554,11 +574,99 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-60.869565217391312" y="135.9375"/>
+            <point key="canvasLocation" x="848.79999999999995" y="135.38230884557723"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dqN-hm-DAN">
+            <objects>
+                <viewController id="3s3-3E-Iuq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GGG-kg-Cbj" customClass="GradientView" customModule="battleshipLidauer" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="rdS-Ua-cMS" userLabel="Menu Bar">
+                                <rect key="frame" x="0.0" y="39" width="375" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kaspisches Meer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6n-Eg-BnY">
+                                        <rect key="frame" x="77" y="5" width="189" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="189" id="DIw-I5-NfJ"/>
+                                            <constraint firstAttribute="height" constant="39" id="pIt-Yq-mfO"/>
+                                        </constraints>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" image="ellipsis" catalog="system" id="xVk-Tu-aGq">
+                                        <rect key="frame" x="290" y="24" width="55" height="10"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="52" id="bQG-PV-Hs5"/>
+                                            <constraint firstAttribute="height" constant="25" id="d3q-SL-Mpj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="arrow.left.circle" catalog="system" id="4BW-s7-X3N">
+                                        <rect key="frame" x="8" y="6" width="51" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="51" id="MG3-JM-adB"/>
+                                            <constraint firstAttribute="height" constant="48.5" id="aCq-mP-aIj"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="g6n-Eg-BnY" firstAttribute="centerY" secondItem="rdS-Ua-cMS" secondAttribute="centerY" id="4lD-1h-sso"/>
+                                    <constraint firstItem="g6n-Eg-BnY" firstAttribute="centerX" secondItem="rdS-Ua-cMS" secondAttribute="centerX" id="YVi-zg-PPZ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ut8-AH-ci5">
+                                <rect key="frame" x="8" y="95" width="342" height="342"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="342" id="CqC-iB-YZf"/>
+                                    <constraint firstAttribute="height" constant="342" id="mw4-Bd-5cQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="1" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ut8-AH-ci5" firstAttribute="centerX" secondItem="GGG-kg-Cbj" secondAttribute="centerX" id="dEb-Kx-DGA"/>
+                            <constraint firstItem="Ut8-AH-ci5" firstAttribute="centerY" secondItem="GGG-kg-Cbj" secondAttribute="centerY" id="w0X-af-fdc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gdz-5c-MjX"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="0.27450980390000002" green="0.62352941179999999" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.12941176469999999" green="0.27058823529999998" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yeW-RW-1Xa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1668" y="135.38230884557723"/>
         </scene>
     </scenes>
     <resources>
         <image name="arrow.left.circle" catalog="system" width="64" height="62"/>
+        <image name="ellipsis" catalog="system" width="64" height="20"/>
         <image name="play.circle.fill" catalog="system" width="64" height="62"/>
     </resources>
     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
