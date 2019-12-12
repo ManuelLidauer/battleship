@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -805,10 +806,36 @@ Own:
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOR-mT-dLN">
                                 <rect key="frame" x="16.5" y="162.5" width="342" height="342"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uMQ-o2-EZs">
+                                        <rect key="frame" x="0.0" y="0.0" width="342" height="342"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UnR-Vu-lcU">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="aVv-mp-uO8">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Xdi-eI-hzu">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="342" id="73E-4y-f15"/>
                                     <constraint firstAttribute="width" constant="342" id="CIS-gP-Chg"/>
+                                    <constraint firstItem="uMQ-o2-EZs" firstAttribute="top" secondItem="wOR-mT-dLN" secondAttribute="top" id="d7N-ZK-GDS"/>
+                                    <constraint firstItem="uMQ-o2-EZs" firstAttribute="leading" secondItem="wOR-mT-dLN" secondAttribute="leading" id="egP-Ih-Nog"/>
+                                    <constraint firstAttribute="trailing" secondItem="uMQ-o2-EZs" secondAttribute="trailing" id="fOW-xi-wfu"/>
+                                    <constraint firstAttribute="bottom" secondItem="uMQ-o2-EZs" secondAttribute="bottom" id="rae-8F-XV9"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
@@ -852,7 +879,6 @@ Own:
         <image name="play.circle.fill" catalog="system" width="64" height="62"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nb3-Gw-xbn"/>
         <segue reference="gKD-tb-NKB"/>
         <segue reference="RA0-Za-7Fz"/>
         <segue reference="hRU-Wp-T8v"/>
