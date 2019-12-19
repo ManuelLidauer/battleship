@@ -1,10 +1,9 @@
-//
-//  ViewController.swift
-//  guitest_st
-//
-//  Created by Stockinger Simon on 17.10.19.
-//  Copyright © 2019 Stockinger Simon. All rights reserved.
-//
+/*
+ Segue Tutorial:
+ https://www.codingexplorer.com/segue-swift-view-controllers/
+ */
+
+
 
 import UIKit
 
@@ -13,28 +12,25 @@ class ViewController: UIViewController {
     let arrayLevelNames = ["Mittelmeer", "Nordsee", "Ostsee", "Nordpazifik", "Südpazifik", "Indik", "Nordpolar Meer", "Südpolar Meer", "Kaspisches Meer"]
     
     
-    @IBOutlet weak var collectionView: UICollectionView!
     
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    
-    
-    
-    
-    
-    
-    //Function: OpenProject
+    //Function: OpenLevel
     //Übergabewerte: Name
     //Datei anhand von Namen einlesen & in Raster anzeigen
     //Überschrift auf Namen umändern
     //Rückgabwerte: /
-    func openProject(with name: String) {
-    
+    @IBAction func openNewLevel(_ sender: UIButton) {
+        var levelname = sender.tag
+        print("Open new level with the ID: \(levelname)");
+        
+        self.performSegue(withIdentifier: "SegueToLevel", sender: nil)
+        
+        
     }
+    
+    
+    
     
     
     
@@ -42,7 +38,7 @@ class ViewController: UIViewController {
     //Übergabeparameter: Raster Position
     //Zustand ändern von Leer -> Block -> Wasser
     //Rückgabewerte:
-    
+
     
     
     //Function Dauerhaft: CheckSurroundings
