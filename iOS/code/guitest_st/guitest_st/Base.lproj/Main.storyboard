@@ -91,21 +91,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="249" misplaced="YES" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVp-CZ-Jyo">
-                                <rect key="frame" x="55" y="88" width="265" height="529"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="249" misplaced="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVp-CZ-Jyo">
+                                <rect key="frame" x="55" y="147" width="265" height="470"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Wikipedia-Original
-Die Zahl am Ende jeder Zeile oder Spalte zeigt an, wie viele Felder durch Schiffe resp. Schiffselemente besetzt sind.
-Schiffe d¸rfen sich nicht ber¸hren, weder horizontal oder vertikal, noch diagonal. Das heiﬂt, dass jedes Schiff vollst‰ndig von Wasser (oder Rand) umgeben sein muss.[1]
-Schiffe d¸rfen den Rand ber¸hren, sowohl der L‰nge nach wie auch stirnseitig
+                                <string key="text">
+* Die Zahl am Ende einer Zeile / Spalte gibt an, wieviele Schiffsblöcke sich dort befinden
 
+* Schiffsblöcke von verschiedenen Schiffen müssen in alle Richtungen durch ein Wasserfeld abgegrenzt sein
 
-Own:
-* Die Zahl am Ende einer Zeile / Spalte gibt an, wieviele Schiffsblˆcke sich dort befinden
-* Schiffsblˆcke von verschiedenen Schiffen m¸ssen in alle Richtungen durch ein Wasserfeld abgegrenzt sein
-* Schiffe d¸rfen den Rand ber¸hren, l‰ngs- als auch stirnseitig</string>
+* Schiffe dürfen den Rand berühren, längs- als auch stirnseitig</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="right" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBI-Jn-Dk4">
@@ -119,16 +115,26 @@ Own:
                                     <segue destination="BYZ-38-t0r" kind="presentation" customClass="InvertedVerticalCover" customModule="guitest_st" customModuleProvider="target" id="nTv-1i-YPq"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rules" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ji2-75-OLn">
+                                <rect key="frame" x="142.5" y="95" width="90" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.12941176470588234" green="0.27058823529411763" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="5oA-J2-h7h" firstAttribute="trailing" secondItem="PVp-CZ-Jyo" secondAttribute="trailing" constant="55" id="0wT-3u-iQs"/>
                             <constraint firstItem="PVp-CZ-Jyo" firstAttribute="leading" secondItem="5oA-J2-h7h" secondAttribute="leading" constant="55" id="1po-pO-Ngb"/>
+                            <constraint firstItem="PVp-CZ-Jyo" firstAttribute="top" secondItem="Ji2-75-OLn" secondAttribute="bottom" constant="10" id="99u-rP-bXL"/>
                             <constraint firstItem="PBI-Jn-Dk4" firstAttribute="leading" secondItem="5oA-J2-h7h" secondAttribute="leading" id="LUx-5d-cgV"/>
                             <constraint firstItem="5oA-J2-h7h" firstAttribute="bottom" secondItem="PVp-CZ-Jyo" secondAttribute="bottom" constant="50" id="RRE-1q-OP6"/>
                             <constraint firstItem="PBI-Jn-Dk4" firstAttribute="top" secondItem="5oA-J2-h7h" secondAttribute="top" id="ShE-dB-22R"/>
+                            <constraint firstItem="Ji2-75-OLn" firstAttribute="top" secondItem="5oA-J2-h7h" secondAttribute="top" constant="95" id="h80-Zy-5C0"/>
                             <constraint firstItem="PBI-Jn-Dk4" firstAttribute="trailing" secondItem="5oA-J2-h7h" secondAttribute="trailing" id="pEo-uF-hTV"/>
+                            <constraint firstItem="Ji2-75-OLn" firstAttribute="centerX" secondItem="PBI-Jn-Dk4" secondAttribute="centerX" id="qPi-pE-u1J"/>
+                            <constraint firstItem="PVp-CZ-Jyo" firstAttribute="centerX" secondItem="PBI-Jn-Dk4" secondAttribute="centerX" id="wFH-ec-P8j"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5oA-J2-h7h"/>
                         <userDefinedRuntimeAttributes>
@@ -249,6 +255,9 @@ Own:
                                                                 <state key="normal" image="play.circle.fill" catalog="system">
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="35" scale="large" weight="semibold"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <segue destination="tvT-Pr-TZz" kind="presentation" id="1zU-W6-sfO"/>
+                                                                </connections>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jY0-qi-VCE" userLabel="level.easy.level.1.line">
                                                                 <rect key="frame" x="0.0" y="60.5" width="105" height="3"/>
@@ -278,6 +287,9 @@ Own:
                                                                 <state key="normal" image="play.circle.fill" catalog="system">
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="35" scale="large" weight="semibold"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <segue destination="tvT-Pr-TZz" kind="presentation" id="d1W-9j-ZEA"/>
+                                                                </connections>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tvS-hF-bnA" userLabel="level.easy.level.2.line">
                                                                 <rect key="frame" x="0.0" y="60.5" width="105" height="3"/>
@@ -304,6 +316,9 @@ Own:
                                                                 <state key="normal" image="play.circle.fill" catalog="system">
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="35" scale="large" weight="semibold"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <segue destination="tvT-Pr-TZz" kind="presentation" id="0pO-XA-1r0"/>
+                                                                </connections>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RuW-Sw-ZOl" userLabel="level.easy.level.3.line">
                                                                 <rect key="frame" x="0.0" y="60.5" width="105" height="3"/>
@@ -387,6 +402,9 @@ Own:
                                                                 <state key="normal" image="play.circle.fill" catalog="system">
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="35" scale="large" weight="semibold"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <segue destination="tvT-Pr-TZz" kind="presentation" id="1XN-yp-bpm"/>
+                                                                </connections>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xoW-Oz-TAq" userLabel="level.medium.level.1.line">
                                                                 <rect key="frame" x="0.0" y="60.5" width="105" height="3"/>
@@ -413,6 +431,9 @@ Own:
                                                                 <state key="normal" image="play.circle.fill" catalog="system">
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="35" scale="large" weight="semibold"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <segue destination="tvT-Pr-TZz" kind="presentation" id="7kw-aR-7vX"/>
+                                                                </connections>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yWn-gg-xWf" userLabel="level.medium.level.2.line">
                                                                 <rect key="frame" x="0.0" y="60.5" width="105" height="3"/>
@@ -439,6 +460,9 @@ Own:
                                                                 <state key="normal" image="play.circle.fill" catalog="system">
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="35" scale="large" weight="semibold"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <segue destination="tvT-Pr-TZz" kind="presentation" id="rZf-RF-LP0"/>
+                                                                </connections>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWU-br-Ipf" userLabel="level.medium.level.3.line">
                                                                 <rect key="frame" x="0.0" y="60.5" width="105" height="3"/>
@@ -514,6 +538,9 @@ Own:
                                                                 <state key="normal" image="play.circle.fill" catalog="system">
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="35" scale="large" weight="semibold"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <segue destination="tvT-Pr-TZz" kind="presentation" id="0Z3-6c-uY5"/>
+                                                                </connections>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NOd-X9-gqu" userLabel="level.hard.level.1.line">
                                                                 <rect key="frame" x="0.0" y="60.5" width="105" height="3"/>
@@ -540,6 +567,9 @@ Own:
                                                                 <state key="normal" image="play.circle.fill" catalog="system">
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="35" scale="large" weight="semibold"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <segue destination="tvT-Pr-TZz" kind="presentation" id="ZzS-BU-rar"/>
+                                                                </connections>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pCL-00-Usw" userLabel="level.hard.level.2.line">
                                                                 <rect key="frame" x="0.0" y="60.5" width="105" height="3"/>
@@ -766,9 +796,9 @@ Own:
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="37h-cd-VH0"/>
-        <segue reference="vIL-TV-gTt"/>
+        <segue reference="a7t-6A-kSi"/>
         <segue reference="CYS-F6-xdT"/>
-        <segue reference="V4G-j1-si2"/>
+        <segue reference="r7i-Xl-8RU"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
